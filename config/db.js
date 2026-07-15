@@ -2,7 +2,6 @@ const sqlite3 = require("sqlite3").verbose();
 const dotenv = require("dotenv");
 
 dotenv.config();
-require("./config/db");
 
 const dbPath = process.env.DB_PATH || "./database.sqlite";
 

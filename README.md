@@ -1,48 +1,55 @@
-# Bitácora Clase 56
+# Petición en 3 Clics
+
+Plataforma comunitaria para crear causas, registrar apoyos y generar un PDF colectivo.
+
+## Objetivo
+
+Construir una herramienta sencilla de participación ciudadana que permita organizar solicitudes comunitarias y registrar apoyos.
+
+## Instalación
+
+```bash
+npm install
+````
+
+## Ejecución
+
+```bash
+npm start
 ```
 
-## Datos
+## Variables de entorno
 
-Nombre:
-Fecha:
-Clase: 56
-Repositorio:
-Rama:
+Crear `.env` local con:
 
-## Comunicaciones
+```txt
+PORT=3000
+DB_PATH=./database.sqlite
+```
 
-¿Qué significa Petición en 3 Clics?
+## Rutas iniciales
 
-¿Qué problema comunitario puede ayudar a organizar?
+* `GET /estado`
+* `GET /api/causas`
+* `POST /api/causas`
+* `POST /api/apoyos`
+* `GET /api/apoyos/:causaId`
 
-¿Qué evidencia se creó hoy?
+## Privacidad
 
-## Jurídico
+No se solicitan cédulas, teléfonos, direcciones ni datos sensibles.
 
-¿Por qué no se debe pedir cédula?
+## Interfaz visual
 
-¿Qué datos son suficientes para un apoyo de práctica?
+La Clase 57 agrega una interfaz en `/` que permite:
 
-¿Qué límites tiene la plataforma?
+- Crear causas comunitarias.
+- Ver causas registradas.
+- Registrar apoyos.
+- Ver contador de apoyos.
+- Ver comentarios de apoyo.
 
-## Tecnología
+## Regla de privacidad
 
-¿Qué dependencias se instalaron?
-
-¿Qué tablas se crearon?
-
-¿Qué rutas se probaron?
-
-¿Qué resultado dio la prueba de crear causa?
-
-¿Qué resultado dio la prueba de registrar apoyo?
-
-## Debate en clase
-
-Respuesta personal:
-
-## Evidencia
-
-Commit realizado:
-
-Observaciones:
+El formulario de apoyo solo pide nombre de práctica y comentario opcional.
+No solicita cédula, teléfono, dirección ni datos sensibles.
